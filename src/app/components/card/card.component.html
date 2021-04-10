@@ -1,6 +1,7 @@
-<div class="card" (click)="flip()">
+<div class="vcard" (click)="flip()" [ngClass]="{ flipped: flipped }">
   <div class="front">{{ card.title }}</div>
   <div class="back">
     <img src="{{ getThumbnail() }}" />
+    <div class="boto_veure" (click)="openVideo($event)">Veure</div>
   </div>
 </div>

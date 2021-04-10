@@ -13,12 +13,16 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {}
 
   public flip() {
-    this.flipped = true;
+    this.flipped = !this.flipped;
   }
-  public return() {
-    this.flipped = false;
-  }
+
   public getThumbnail() {
     return `assets/thumbnails/${this.card.thumbnail}`;
+  }
+
+  public openVideo(event: any) {
+    event.stopPropagation();
+
+    console.log('Open video', this.card);
   }
 }

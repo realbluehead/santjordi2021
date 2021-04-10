@@ -9,7 +9,7 @@ const CARDS = [
   },
   {
     title: 'I4',
-    thumbnail: 'i5.png',
+    thumbnail: 'i4-1.png',
     video: 'i4',
   },
   {
@@ -48,24 +48,24 @@ const CARDS = [
     video: 'p6',
   },
   {
-    title: 'E1',
-    thumbnail: 'p6.png',
-    video: 'p6',
+    title: 'ESO1',
+    thumbnail: 'eso1.png',
+    video: 'eso1',
   },
   {
-    title: 'E2',
-    thumbnail: 'p6.png',
-    video: 'p6',
+    title: 'ESO2',
+    thumbnail: 'eso2.png',
+    video: 'eso2',
   },
   {
-    title: 'E3',
-    thumbnail: 'p6.png',
-    video: 'p6',
+    title: 'ESO3',
+    thumbnail: 'eso3.png',
+    video: 'eso3',
   },
   {
-    title: 'E4',
-    thumbnail: 'p6.png',
-    video: 'p6',
+    title: 'ESO4',
+    thumbnail: 'eso4.png',
+    video: 'eso4',
   },
 ];
 
