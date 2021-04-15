@@ -73,5 +73,15 @@
 .boto_veure {
   position: absolute;
   top: 0;
-  font-size: 25px !important;
+  margin-top: auto;
+  background-color: rgb(104, 156, 73);
+  opacity: 0.7;
+  width: 50% !important;
+  height: 96px !important;
+  font-size: 24px !important;
+  line-height: 96px !important;
+  margin: 25%;
+  color: #fff;
+  border: 1ºpx solid #fff;
+  border-radius: 4px;
 }

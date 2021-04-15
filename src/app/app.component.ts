@@ -9,12 +9,12 @@ const CARDS = [
   },
   {
     title: 'I4',
-    thumbnail: 'i4-1.png',
+    thumbnail: 'i4.png',
     video: 'i4',
   },
   {
     title: 'I5',
-    thumbnail: 'i5.png',
+    thumbnail: 'i5-1.png',
     video: 'i5',
   },
   {
@@ -29,7 +29,7 @@ const CARDS = [
   },
   {
     title: 'P3',
-    thumbnail: 'p3.png',
+    thumbnail: 'p3-1.png',
     video: 'p3',
   },
   {

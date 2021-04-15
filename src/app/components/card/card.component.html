@@ -2,6 +2,8 @@
   <div class="front">{{ card.title }}</div>
   <div class="back">
     <img src="{{ getThumbnail() }}" />
-    <div class="boto_veure" (click)="openVideo($event)">Veure</div>
+    <div class="boto_veure" (click)="openVideo($event)" title="Veure video">
+      Veure
+    </div>
   </div>
 </div>
