@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   @Input() card: any;
   public flipped = false;
+  @Output() openedModal: EventEmitter<boolean> = new EventEmitter();
   constructor() {}
 
   ngOnInit(): void {}
@@ -22,7 +23,14 @@ export class CardComponent implements OnInit {
 
   public openVideo(event: any) {
     event.stopPropagation();
+    this.openModal();
+  }
 
-    console.log('Open video', this.card);
+  public openModal() {
+    this.openedModal.emit(true);
+  }
+
+  public closeModal() {
+    this.openedModal.emit(false);
   }
 }

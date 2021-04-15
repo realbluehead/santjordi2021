@@ -2,22 +2,91 @@
   <div class="title">Aquest any ens recomaneu...</div>
   <div class="tapis">
     <div class="columns">
-      <app-card [card]="cards[0]" class="column"></app-card>
-      <app-card [card]="cards[1]" class="column"></app-card>
-      <app-card [card]="cards[2]" class="column"></app-card>
-      <app-card [card]="cards[3]" class="column"></app-card>
+      <app-card
+        [card]="cards[0]"
+        class="column"
+        (openedModal)="openModal(cards[0])"
+      ></app-card>
+      <app-card
+        [card]="cards[1]"
+        class="column"
+        (openedModal)="openModal(cards[1])"
+      ></app-card>
+      <app-card
+        [card]="cards[2]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[3]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
     </div>
     <div class="columns">
-      <app-card [card]="cards[4]" class="column"></app-card>
-      <app-card [card]="cards[5]" class="column"></app-card>
-      <app-card [card]="cards[6]" class="column"></app-card>
-      <app-card [card]="cards[7]" class="column"></app-card>
+      <app-card
+        [card]="cards[4]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[5]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[6]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[7]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
     </div>
     <div class="columns">
-      <app-card [card]="cards[8]" class="column"></app-card>
-      <app-card [card]="cards[9]" class="column"></app-card>
-      <app-card [card]="cards[10]" class="column"></app-card>
-      <app-card [card]="cards[11]" class="column"></app-card>
+      <app-card
+        [card]="cards[8]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[9]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[10]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
+      <app-card
+        [card]="cards[11]"
+        class="column"
+        (openedModal)="openModal(card)"
+      ></app-card>
     </div>
+  </div>
+</div>
+<div class="modal" [ngClass]="{ 'is-active': openedModal }">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Support the project</p>
+      <button class="delete" aria-label="close" (click)="closeModal()"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>
+        We are doing this as a side project but it would help us a lot to
+        receive some ADA in order to cover the costs. Please feel free to send
+        any amount or NFT to this Shelley address:
+      </p>
+
+      <div class="address">
+        addr1q9nd87j0nea64lw8a8qh9pddss6g66ezq493lcuujcq9sjj7kmahna7k4wvtv8l64ysaekk5wprw23nap67d8sh54faqsgcwz0
+      </div>
+      <p>Thank you!</p>
+    </section>
   </div>
 </div>

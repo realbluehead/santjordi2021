@@ -77,11 +77,15 @@
   background-color: rgb(104, 156, 73);
   opacity: 0.7;
   width: 50% !important;
-  height: 96px !important;
+  height: 64px !important;
   font-size: 24px !important;
-  line-height: 96px !important;
+  line-height: 64px !important;
   margin: 25%;
   color: #fff;
-  border: 1ºpx solid #fff;
+  border: 1px solid #fff;
   border-radius: 4px;
+
+  &:hover {
+    background-color: rgb(124, 176, 93);
+  }
 }

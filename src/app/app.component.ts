@@ -77,4 +77,14 @@ const CARDS = [
 export class AppComponent {
   public title = 'Sant Jordi 2021';
   public cards = CARDS;
+  public openedModal = false;
+
+  public openModal(card: any) {
+    console.log(card);
+    this.openedModal = true;
+  }
+
+  public closeModal() {
+    this.openedModal = false;
+  }
 }
