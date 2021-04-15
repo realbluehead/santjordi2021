@@ -1,5 +1,5 @@
 :host {
-  background-color: #9b1212;
+  background-color: rgb(1, 94, 155);
   opacity: 0.95;
   border: 1px solid grey;
   border-radius: 4px;
@@ -39,11 +39,11 @@
   backface-visibility: hidden;
 }
 .vcard .front {
-  background-color: #d14646;
+  background-color: rgb(1, 94, 155);
   opacity: 0.8;
 
   &:hover {
-    background-color: rgb(204, 204, 55);
+    background-color: rgb(104, 156, 73);
     opacity: 0.8;
   }
 }
