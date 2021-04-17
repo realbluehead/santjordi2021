@@ -1,11 +1,20 @@
-.title {
-  margin: 48px;
-  color: #ffffff;
-  //background-color: rgb(104, 156, 73);
-  padding: 8px 10%;
-  opacity: 0.9;
-  border-radius: 4px;
+.titol {
+  & .text_titol {
+    color: #ffffff;
+    background-color: rgb(104, 156, 73);
+    opacity: 0.9;
+    font-size: 2em;
+    border-radius: 4px;
+  }
+  margin: 20px 48px;
 }
 .tapis {
-  margin: 48px;
+  margin: 20px 48px;
+}
+
+.titol img {
+  height: 96px;
+  width: 96px;
+  min-height: 96px;
+  min-width: 96px;
 }

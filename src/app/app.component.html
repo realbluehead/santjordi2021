@@ -1,5 +1,21 @@
 <div class="container">
-  <div class="title">Aquest any ens recomaneu...</div>
+  <div class="columns titol">
+    <div
+      class="column is-one-fifth has-text-left-desktop has-text-centered-mobile"
+    >
+      <img src="assets/logo_afa.jpg" />
+    </div>
+    <div
+      class="column is-size-4-mobile is-size-1-desktop has-text-centered text_titol"
+    >
+      Aquest any ens recomaneu...
+    </div>
+    <div
+      class="column is-one-fifth has-text-right-desktop has-text-centered-mobile"
+    >
+      <img src="assets/logo_compartim.png" />
+    </div>
+  </div>
   <div class="tapis">
     <div class="columns">
       <app-card
@@ -15,56 +31,56 @@
       <app-card
         [card]="cards[2]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[2])"
       ></app-card>
       <app-card
         [card]="cards[3]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[3])"
       ></app-card>
     </div>
     <div class="columns">
       <app-card
         [card]="cards[4]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[4])"
       ></app-card>
       <app-card
         [card]="cards[5]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[5])"
       ></app-card>
       <app-card
         [card]="cards[6]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[6])"
       ></app-card>
       <app-card
         [card]="cards[7]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[7])"
       ></app-card>
     </div>
     <div class="columns">
       <app-card
         [card]="cards[8]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[8])"
       ></app-card>
       <app-card
         [card]="cards[9]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[9])"
       ></app-card>
       <app-card
         [card]="cards[10]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[10])"
       ></app-card>
       <app-card
         [card]="cards[11]"
         class="column"
-        (openedModal)="openModal(card)"
+        (openedModal)="openModal(cards[11])"
       ></app-card>
     </div>
   </div>
@@ -73,14 +89,16 @@
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-      <p class="modal-card-title">Support the project</p>
+      <p class="modal-card-title">
+        Recomanacions de Sant Jordi per a {{ currentCard.title }}
+      </p>
       <button class="delete" aria-label="close" (click)="closeModal()"></button>
     </header>
     <section class="modal-card-body">
       <iframe
         width="100%"
         height="315"
-        src="https://www.youtube.com/embed/UqgUPl7MNGg"
+        [src]="currentVideo | safe"
         frameborder="0"
         allowfullscreen
       ></iframe>

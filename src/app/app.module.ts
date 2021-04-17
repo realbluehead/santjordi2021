@@ -3,16 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CardComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, CardComponent, SafePipe],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

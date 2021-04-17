@@ -9,11 +9,15 @@ import { CARDS } from './cards';
 })
 export class AppComponent {
   public title = 'Sant Jordi 2021';
+  public currentVideo = '';
+  public currentCard = CARDS[0];
   public cards = CARDS;
   public openedModal = false;
 
   public openModal(card: any) {
-    console.log(card);
+    this.currentCard = card;
+    const video = card.video;
+    this.currentVideo = `https://www.youtube.com/embed/${video}`;
     this.openedModal = true;
   }
 
