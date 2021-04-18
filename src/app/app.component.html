@@ -111,9 +111,13 @@
         <div class="columns">
           <div
             class="column has-text-centered"
-            *ngFor="let video of currentCard.thumbnail"
+            *ngFor="let video of currentCard.thumbnail; index as i"
           >
-            <img class="thumbnail" src="{{ getThumbnail(video) }}" />
+            <img
+              class="thumbnail"
+              src="{{ getThumbnail(video) }}"
+              (click)="selectVideo(i)"
+            />
           </div>
         </div>
       </ng-container>

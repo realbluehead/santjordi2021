@@ -28,4 +28,8 @@ export class AppComponent {
   public getThumbnail(thumbnail: string) {
     return `assets/thumbnails/${thumbnail}`;
   }
+
+  public selectVideo(index: number) {
+    this.currentVideo = this.currentCard.video[index];
+  }
 }

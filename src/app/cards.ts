@@ -12,7 +12,7 @@ export const CARDS = [
   {
     title: 'I5',
     thumbnail: ['i5-1.png', 'i5-2.png'],
-    video: ['95T-4VgB95g', '95T-4VgB95g'],
+    video: ['95T-4VgB95g', 'W-pttvlPKWY'],
   },
   {
     title: 'P1',
@@ -27,7 +27,7 @@ export const CARDS = [
   {
     title: 'P3',
     thumbnail: ['p3-1.png', 'p3-2.png'],
-    video: ['vHNlEUFdD14', '95T-4VgB95g'],
+    video: ['vHNlEUFdD14', 'xxzG5qUJ2kA'],
   },
   {
     title: 'P4',
@@ -57,7 +57,7 @@ export const CARDS = [
   {
     title: 'ESO3',
     thumbnail: ['eso3.png'],
-    video: ['eso3'],
+    video: ['Jc0UjK0qRm4'],
   },
   {
     title: 'ESO4',
