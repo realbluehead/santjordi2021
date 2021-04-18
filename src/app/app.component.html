@@ -3,17 +3,12 @@
     <div
       class="column is-one-fifth has-text-left-desktop has-text-centered-mobile"
     >
-      <img src="assets/logo_afa.jpg" />
+      <img src="assets/logo_compartim.png" />
     </div>
     <div
       class="column is-size-4-mobile is-size-2-desktop has-text-centered text_titol"
     >
       Aquest any ens recomaneu...
-    </div>
-    <div
-      class="column is-one-fifth has-text-right-desktop has-text-centered-mobile"
-    >
-      <img src="assets/logo_compartim.png" />
     </div>
   </div>
   <div class="tapis">
@@ -90,11 +85,23 @@
     </div>
   </div>
 </div>
+<div class="columns titol">
+  <div
+    class="column is-size-5-mobile is-size-4-desktop has-text-centered text_titol"
+  >
+    Entre tots fem el butlletí! #TotsSomAFA
+  </div>
+  <div
+    class="column is-one-fifth has-text-right-desktop has-text-centered-mobile is-hidden-mobile"
+  >
+    <img src="assets/logo_afa.jpg" />
+  </div>
+</div>
 <div class="modal" [ngClass]="{ 'is-active': openedModal }">
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-      <p class="modal-card-title">
+      <p class="modal-card-title is-size-6-mobile">
         Recomanacions de Sant Jordi per a {{ currentCard.title }}
       </p>
       <button class="delete" aria-label="close" (click)="closeModal()"></button>
