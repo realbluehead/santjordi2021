@@ -22,6 +22,7 @@ export class AppComponent {
   }
 
   public closeModal() {
+    this.currentVideo = ';javascript';
     this.openedModal = false;
   }
 
@@ -30,6 +31,7 @@ export class AppComponent {
   }
 
   public selectVideo(index: number) {
-    this.currentVideo = this.currentCard.video[index];
+    const video = this.currentCard.video[index];
+    this.currentVideo = `https://www.youtube.com/embed/${video}`;
   }
 }
