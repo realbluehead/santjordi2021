@@ -6,7 +6,7 @@
       <img src="assets/logo_afa.jpg" />
     </div>
     <div
-      class="column is-size-4-mobile is-size-1-desktop has-text-centered text_titol"
+      class="column is-size-4-mobile is-size-2-desktop has-text-centered text_titol"
     >
       Aquest any ens recomaneu...
     </div>
@@ -82,6 +82,11 @@
         class="column"
         (openedModal)="openModal(cards[11])"
       ></app-card>
+      <app-card
+        [card]="cards[12]"
+        class="column"
+        (openedModal)="openModal(cards[12])"
+      ></app-card>
     </div>
   </div>
 </div>
@@ -102,6 +107,16 @@
         frameborder="0"
         allowfullscreen
       ></iframe>
+      <ng-container *ngIf="currentCard.video.length > 1">
+        <div class="columns">
+          <div
+            class="column has-text-centered"
+            *ngFor="let video of currentCard.thumbnail"
+          >
+            <img class="thumbnail" src="{{ getThumbnail(video) }}" />
+          </div>
+        </div>
+      </ng-container>
     </section>
   </div>
 </div>

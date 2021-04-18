@@ -16,12 +16,16 @@ export class AppComponent {
 
   public openModal(card: any) {
     this.currentCard = card;
-    const video = card.video;
+    const video = card.video[0];
     this.currentVideo = `https://www.youtube.com/embed/${video}`;
     this.openedModal = true;
   }
 
   public closeModal() {
     this.openedModal = false;
+  }
+
+  public getThumbnail(thumbnail: string) {
+    return `assets/thumbnails/${thumbnail}`;
   }
 }

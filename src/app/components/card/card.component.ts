@@ -18,7 +18,7 @@ export class CardComponent implements OnInit {
   }
 
   public getThumbnail() {
-    return `assets/thumbnails/${this.card.thumbnail}`;
+    return `assets/thumbnails/${this.card.thumbnail[0]}`;
   }
 
   public openVideo(event: any) {
