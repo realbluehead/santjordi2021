@@ -9769,9 +9769,11 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 html {
   height: 100%;
-  background-image: url('fons.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-image: url('fons.jpg');
+}
+.modal-card-head,
+.modal-card-body {
+  background-color: #689c49;
 }
 
 /*# sourceMappingURL=styles.css.map*/
